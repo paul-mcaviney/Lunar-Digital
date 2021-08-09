@@ -45,6 +45,8 @@
         <br>
         <a class="button-link button-link-hollow" href="#about">Learn More</a>
 
+
+        <!-- TODO: Make a couple of different size images for different screen sizes of this one -->
         <picture>
             <source srcset="assets/forest1.webp" type="image/webp">
             <source srcset="assets/forest1.png" type="image/png">
@@ -89,7 +91,7 @@
         <picture>
             <source srcset="assets/wave1.webp" type="image/webp">
             <source srcset="assets/wave1.png" type="image/png">
-            <img aria-hidden="true" id="wave-top" src="assets/wave1.png" alt="">
+            <img aria-hidden="true" class="wave-top" src="assets/wave1.png" alt="">
         </picture>
 
         <!-- TODO: add a sudo element before and after with the scrollwork image -->
@@ -175,12 +177,6 @@
 
         <!-- might have to add a black background to this as well     -->
 
-        <picture>
-            <source srcset="assets/save.webp" type="image/webp">
-            <source srcset="assets/save.png" type="image/png">
-            <img src="assets/save.png" alt="a cartoon man jumping off a pile of coins with an arrow to the side and pointing up, representing savings growth">
-        </picture>
-
         <h2>
             <span class="blue-word">Why</span> We're Different
         </h2>
@@ -193,6 +189,12 @@
             $1000 to $3000 for a basic informational website can be a lot of money up front for a small business just finding its footing, so we’ve adopted a pricing model that eases the burden.
         </p>
 
+        <picture>
+            <source srcset="assets/save.webp" type="image/webp">
+            <source srcset="assets/save.png" type="image/png">
+            <img src="assets/save.png" alt="a cartoon man jumping off a pile of coins with an arrow to the side and pointing up, representing savings growth">
+        </picture>
+
         <p>
             Starting at $150 CAD per month with <span class="blue-word">$0 down</span> and no long term contract, your small business can own a basic static website with up to 5 pages. No risk, no hassle, just a website that works for you from day one.                            
         </p>
@@ -204,17 +206,18 @@
     <!--          Pricing           -->
     <!-------------------------------->
 
-    <section>
+    <section id="pricing">
 
         <!-- do a gradient background for this section -->
 
         <!-- Best Value -->
         <div class="price-card" id="best-value-price-card">
 
+            <!-- TODO: fix the image file: there is a tiny speck of white in the top left area of the image -->
             <picture>
                 <source srcset="assets/value_badge.webp" type="image/webp">
                 <source srcset="assets/value_badge.png" type="image/png">
-                <img id="value-badge" src="assets/value_badge.png" alt="a fancy badge that says 'BEST VALUE', indicating that the following price package is the best value">
+                <img id="value-badge" class="pricing-image" src="assets/value_badge.png" alt="a fancy badge that says 'BEST VALUE', indicating that the following price package is the best value">
             </picture>
 
             <ul>
@@ -242,11 +245,11 @@
             </ul>
 
             <p>
-                <span class="before-price">Starting At</span> $150 <span class="after-price">Per Month</span>
+                <!--<span class="before-price">Starting At</span> --><span id="best-value-price" class="price blue-word">$150</span><br><span class="after-price">Per Month</span>
             </p>
 
             <!-- will link to an actual more detailed pricing page later -->
-            <a class="button-link button-link-full" href="#contact">Learn More</a>
+            <a class="button-link button-link-full price-button" href="#contact">Learn More</a>
 
         </div>
 
@@ -256,7 +259,7 @@
             <picture>
                 <source srcset="assets/crown1.webp" type="image/webp">
                 <source srcset="assets/crown1.png" type="image/png">
-                <img id="premium-crown" src="assets/crown1.png" alt="a grey crown on top of the price package, indicating it is a premium package">
+                <img id="premium-crown" class="pricing-image" src="assets/crown1.png" alt="a grey crown on top of the price package, indicating it is a premium package">
             </picture>
 
             <ul>
@@ -281,11 +284,11 @@
             </ul>
 
             <p>
-                <span class="before-price">Starting At</span> $1500  
+                <!--<span class="before-price">Starting At</span> --><span class="price blue-word">$1500</span>  
             </p>
 
             <!-- will link to an actual more detailed pricing page later -->
-            <a class="button-link button-link-full" href="#contact">Learn More</a>
+            <a class="button-link button-link-full price-button" href="#contact">Learn More</a>
 
         </div>
 
@@ -295,7 +298,7 @@
             <picture>
                 <source srcset="assets/crown2.webp" type="image/webp">
                 <source srcset="assets/crown2.png" type="image/png">
-                <img id="basic-crown" src="assets/crown2.png" alt="a basic grey crown on top of the price package indicating it is the basic package">
+                <img id="basic-crown" class="pricing-image" src="assets/crown2.png" alt="a basic grey crown on top of the price package indicating it is the basic package">
             </picture>
 
             <ul>
@@ -320,20 +323,16 @@
             </ul>
 
             <p>
-                <span class="before-price">Starting At</span> $750 <span class="after-basic-price">Or $50 Per Month</span> 
+                <!--<span class="before-price">Starting At</span> --><span class="price blue-word">$750</span> <br><span class="after-basic-price">Or $50 Per Month</span> 
             </p>
 
             <!-- will link to an actual more detailed pricing page later -->
-            <a class="button-link button-link-full" href="#contact">Learn More</a>
+            <a class="button-link button-link-full price-button" href="#contact">Learn More</a>
 
         </div>
 
         <!-- TODO: figure out how to make the following wave image a layer mask-->
-        <picture>
-            <source srcset="assets/wave1.webp" type="image/webp">
-            <source srcset="assets/wave1.png" type="image/png">
-            <img aria-hidden="true" id="wave-layer-mask" src="assets/wave1.png" alt="">
-        </picture>
+        
 
     </section>
 
@@ -343,6 +342,12 @@
     <!-------------------------------->
 
     <section id="contact">
+
+        <picture>
+            <source srcset="assets/wave1.webp" type="image/webp">
+            <source srcset="assets/wave1.png" type="image/png">
+            <img id="price-bottom-wave" class="wave-top" aria-hidden="true" id="wave-layer-mask" src="assets/wave1.png" alt="">
+        </picture>
 
         <h2>
             <span class="blue-word">Contact</span> Us
