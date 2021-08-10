@@ -331,8 +331,11 @@
 
         </div>
 
-        <!-- TODO: figure out how to make the following wave image a layer mask-->
-        
+        <picture>
+            <source srcset="assets/wave1-blue.webp" type="image/webp">
+            <source srcset="assets/wave1-blue.png" type="image/png">
+            <img id="price-bottom-wave" class="wave-top" aria-hidden="true" id="wave-layer-mask" src="assets/wave1-blue.png" alt="">
+        </picture>
 
     </section>
 
@@ -343,12 +346,6 @@
 
     <section id="contact">
 
-        <picture>
-            <source srcset="assets/wave1.webp" type="image/webp">
-            <source srcset="assets/wave1.png" type="image/png">
-            <img id="price-bottom-wave" class="wave-top" aria-hidden="true" id="wave-layer-mask" src="assets/wave1.png" alt="">
-        </picture>
-
         <h2>
             <span class="blue-word">Contact</span> Us
         </h2>
@@ -358,7 +355,7 @@
                 If you would like us to give you a quote for a new website or any other services we provide, please fill out the form below. We can’t wait to help your business reach the stars!
             </p>
 
-            <label id="name-label" for="name">Name</label>
+            <label id="name-label" class="blue-word" for="name">Name</label>
             <br>
             <input
                 type="text"
@@ -370,7 +367,7 @@
             />
             <br>
 
-            <label id="email-label" for="email">Email</label>
+            <label id="email-label" class="blue-word" for="email">Email</label>
             <br>
             <input
                 type="email"
@@ -382,7 +379,7 @@
             />
             <br>
 
-            <label for="text-field">What's On Your Mind?</label>
+            <label id="text-field-label" class="blue-word" for="text-field">What's On Your Mind?</label>
             <br>
             <textarea 
                 type="text" 
@@ -393,7 +390,7 @@
             </textarea>
             <br>
 
-            <button id="contact-submit" type="submit">Let's Chat</button>
+            <button id="contact-submit" class="button-link button-link-full"  type="submit">Let's Chat</button>
 
         </form>
 

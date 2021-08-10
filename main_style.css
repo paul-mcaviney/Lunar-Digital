@@ -380,7 +380,7 @@ a {
         background-color: #111;
         background: linear-gradient(#111, #62B5E3 90%);
         padding-top: 50px;
-        padding-bottom: 50px;
+        /* padding-bottom: 50px; */
     }
 
     #pricing .pricing-image {
@@ -392,8 +392,17 @@ a {
         top: -87px;
     }
 
-    #basic-crown {
-        max-width: 75px;
+    #pricing #basic-crown, #pricing #premium-crown {
+        max-width: 100px;
+        height: auto;
+        top: -57px;
+        left: 98px;
+
+        /* left: 0;
+        right: 50%;
+        margin-right: -151px;
+        top: -29px;
+        transform: rotateZ(25deg); */
     }
 
     .price-card {
@@ -414,7 +423,11 @@ a {
     }
 
     #premium-price-card, #basic-price-card {
-        padding-top: 50px;
+        padding-top: 25px;
+    }
+
+    #basic-price-card {
+        margin-bottom: 50px;
     }
 
     .price-card p {
@@ -461,7 +474,12 @@ a {
         padding-right: 8px;
     }
 
-
+    /* TODO: get rid of the tiny little line at the top of the wave */
+    #price-bottom-wave {
+        background: var(--black);
+        margin-bottom: -7px;
+        mask-image: url(assets/wave1-blue.png);
+    }
 
 }
 
@@ -483,6 +501,56 @@ a {
 /***********************************/
 
 @media only screen and (min-width: 0) {
+
+    #contact {
+        background-color: var(--black);
+        padding: 1em;
+        text-align: center;
+    }
+
+    #contact p {
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+        margin-bottom: 50px;
+    }
+
+    #contact form {
+        position: relative;
+    }
+
+    #name-label, #email-label, #text-field-label {
+        position: absolute;
+        left: 50%;
+        margin-left: -105px;
+        font-size: 1.1rem;
+    }
+
+    .form-control {
+        margin-bottom: 20px;
+        line-height: 2rem;
+        border-radius: 25px;
+        padding: 0 1rem;
+        font-size: 1.1rem;
+        background-color: rgba(255,255,255,0.5);
+        box-shadow: inset 3.5px 3.5px 3.5px rgba(1,1,1,0.3);    }
+
+    #text-field {
+        width: 220px;
+        border-radius: 25px;
+        min-height: 125px;
+        margin-bottom: 25px;
+        font-size: 1.1rem;
+        padding: 0.5rem 1rem;
+        line-height: 1.5rem;
+        background-color: rgba(255,255,255,0.5);
+        box-shadow: inset 3.5px 3.5px 3.5px rgba(1,1,1,0.3);
+    }
+
+    #contact-submit {
+        width: 150px;
+        padding-top: 0;
+    }
 
 }
 
