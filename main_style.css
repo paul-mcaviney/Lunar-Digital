@@ -46,6 +46,8 @@ a {
     color: var(--main-blue);
 }
 
+
+
 /***********************************/
 /*              Nav                */
 /***********************************/
@@ -78,12 +80,104 @@ a {
         width: 100%;
         height: 100vh;
         text-align: center;
+        overflow: hidden;
         background: url(assets/night_sky_moon.png);
         background-size: 600%;
+        background-position: 15%; 
         background-repeat: no-repeat;
+        /* background-position: -100% -135%; */
         background-attachment: fixed;
-        /* background-position: -100% -105%; */
+        z-index: 1;
+        position: relative;
     }
+
+    /* Twinkling background */
+
+    /* @keyframes move-twink-back {
+        from {background-position:0 0;}
+        to {background-position:-1000px 5000px;}
+    }
+    @-webkit-keyframes move-twink-back {
+        from {background-position:0 0;}
+        to {background-position:-1000px 5000px;}
+    }
+    @-moz-keyframes move-twink-back {
+        from {background-position:0 0;}
+        to {background-position:-1000px 5000px;}
+    }
+    @-ms-keyframes move-twink-back {
+        from {background-position:0 0;}
+        to {background-position:-1000px 5000px;}
+    } */
+    
+    @keyframes move-clouds-back {
+        from {background-position:0 0;}
+        to {background-position:10000px 0;}
+    }
+    @-webkit-keyframes move-clouds-back {
+        from {background-position:0 0;}
+        to {background-position:10000px 0;}
+    }
+    @-moz-keyframes move-clouds-back {
+        from {background-position:0 0;}
+        to {background-position:10000px 0;}
+    }
+    @-ms-keyframes move-clouds-back {
+        from {background-position: 0;}
+        to {background-position:10000px 0;}
+    }
+    
+    /* .stars, .twinkling, .clouds {
+      position:absolute;
+      top:0;
+      left:0;
+      right:0;
+      bottom:0;
+      width:100%;
+      height:100%;
+      display:block;
+    } */
+    
+    /* .stars {
+      background: #000 url(assets/stars.png) repeat top center;
+      z-index:-5;
+    } */
+    
+    /* .twinkling{
+      background:transparent url(assets/twinkling.png) repeat top center;
+      z-index: 1;
+    
+      -moz-animation:move-twink-back 200s linear infinite;
+      -ms-animation:move-twink-back 200s linear infinite;
+      -o-animation:move-twink-back 200s linear infinite;
+      -webkit-animation:move-twink-back 200s linear infinite;
+      animation:move-twink-back 200s linear infinite;
+    } */
+    
+    .clouds{
+        border: 1px solid red;
+        background:transparent url(assets/clouds2.png) repeat-x bottom center;
+        
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        /* NOT WORKING */
+        /* inset: 0; */
+        top: 0;
+        z-index: 0;
+
+        top: 40vh;
+    
+      -moz-animation:move-clouds-back 300s linear infinite;
+      -ms-animation:move-clouds-back 300s linear infinite;
+      -o-animation:move-clouds-back 300s linear infinite;
+      -webkit-animation:move-clouds-back 300s linear infinite;
+      animation:move-clouds-back 300s linear infinite;
+    }
+
+
+    /* End Background */
 
     #hero-logo {
         display: block;
@@ -127,6 +221,7 @@ a {
         border-radius: 50px;
         font-size: 1.25rem;
         font-weight: 600;
+        z-index: 5;
     }
 
     .button-link-full {
@@ -152,6 +247,7 @@ a {
         height: auto;
         height: 80px;
         max-height: 100px;
+        z-index: 5;
     }
 
 
@@ -180,7 +276,8 @@ a {
         display: relative;
         text-align: center;  
         padding: 2em 2em;
-        background-color: var(--black);      
+        background: var(--black);   
+        z-index: 3;   
     }
 
     #about p {
@@ -222,6 +319,7 @@ a {
         width: 100%;
         background: url(assets/night_sky_moon.png);
         background-size: 600%;
+        background-position: 15%;
         background-repeat: no-repeat;
         /* background-position: -100% -135%; */
         background-attachment: fixed;
@@ -477,6 +575,7 @@ a {
     /* TODO: get rid of the tiny little line at the top of the wave */
     #price-bottom-wave {
         background: var(--black);
+        /* background: transparent; */
         margin-bottom: -7px;
         mask-image: url(assets/wave1-blue.png);
     }
@@ -506,6 +605,13 @@ a {
         background-color: var(--black);
         padding: 1em;
         text-align: center;
+
+        background: url(assets/night_sky_moon.png);
+        background-size: 600%;
+        background-position: 15%;
+        background-repeat: no-repeat;
+        /* background-position: -100% -135%; */
+        background-attachment: fixed;
     }
 
     #contact p {
@@ -516,7 +622,12 @@ a {
     }
 
     #contact form {
+        display: block;
         position: relative;
+        background: rgba(1,1,1,0.7);
+        margin: 0 auto;
+        padding: 2rem 1rem;
+        border-radius: 25px;
     }
 
     #name-label, #email-label, #text-field-label {
@@ -533,10 +644,14 @@ a {
         padding: 0 1rem;
         font-size: 1.1rem;
         background-color: rgba(255,255,255,0.5);
-        box-shadow: inset 3.5px 3.5px 3.5px rgba(1,1,1,0.3);    }
+        box-shadow: inset 3.5px 3.5px 3.5px rgba(1,1,1,0.3); 
+        border: 1px solid #111;
+       }
 
     #text-field {
-        width: 220px;
+        /* Not 100% sure the text starts at the beginning of the text field */
+        max-width: 220px;
+        min-width: 220px;
         border-radius: 25px;
         min-height: 125px;
         margin-bottom: 25px;
@@ -545,11 +660,16 @@ a {
         line-height: 1.5rem;
         background-color: rgba(255,255,255,0.5);
         box-shadow: inset 3.5px 3.5px 3.5px rgba(1,1,1,0.3);
+        border: 1px solid #111;
     }
 
     #contact-submit {
         width: 150px;
         padding-top: 0;
+    }
+
+    #contact .wave-bottom {
+        margin-bottom: -22px;
     }
 
 }
@@ -572,6 +692,41 @@ a {
 /***********************************/
 
 @media only screen and (min-width: 0) {
+
+    footer {
+        width: 100%;
+        background-color: var(--black);
+        text-align: center;
+    }
+
+    footer hr {
+        width: 75%;
+    }
+
+    #footer-logo {
+        display: block;
+        width: 70%;
+        margin: 2rem auto;
+    }
+    footer a {
+        color: var(--main-blue);
+    }
+
+    footer ul {
+        column-count: 2;
+        margin: 0 auto;
+        padding: 0 2rem;
+        line-height: 2rem;
+        margin-bottom: 20px;
+    }
+
+    footer ul li {
+        list-style-type: none;
+    }
+
+    #copywright {
+        font-size: 0.8rem;
+    }
 
 }
 
