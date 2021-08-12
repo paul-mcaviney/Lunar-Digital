@@ -25,12 +25,10 @@ html.active {
 body {
     margin: 0;
     padding: 0;
-    /* overflow-x: hidden; */
     background: url(assets/night_sky_moon.png);
     background-size: 600%;
     background-position: 15%; 
     background-repeat: no-repeat;
-    /* background-position: -100% -135%; */
     background-attachment: fixed;
 }
 
@@ -388,6 +386,7 @@ a {
         max-width: 400px;
         height: auto;
         margin: 0 auto;
+        margin-right: 30px;
     }
 
 }
@@ -570,11 +569,12 @@ a {
 @media only screen and (min-width: 0) {
 
     #pricing {
+        position: relative;
         width: 100%;
         background-color: #111;
         background: linear-gradient(#111, #62B5E3 90%);
         padding-top: 100px;
-        /* padding-bottom: 50px; */
+        padding-bottom: 20px;
     }
 
     #pricing .pricing-image {
@@ -591,12 +591,6 @@ a {
         height: auto;
         top: -57px;
         left: 98px;
-
-        /* left: 0;
-        right: 50%;
-        margin-right: -151px;
-        top: -29px;
-        transform: rotateZ(25deg); */
     }
 
     .price-card {
@@ -654,26 +648,15 @@ a {
         font-size: 1rem;
     }
 
-    /* #best-value-price::after {
-        content: 'Per Month';
-        color: var(--white);
-        font-size: 1rem;
-        position: absolute;
-        bottom: 47;
-        right: 50%;
-        margin-right: -111px;
-    } */
-
     .price-button {
         padding-right: 8px;
     }
 
-    /* TODO: get rid of the tiny little line at the top of the wave */
     #price-bottom-wave {
-        background: var(--black);
-        /* background: transparent; */
+        position: absolute;
+        bottom: -71px;
+        background: transparent;
         margin-bottom: -7px;
-        mask-image: url(assets/wave1-blue.png);
     }
 
 }
@@ -701,6 +684,7 @@ a {
         /* background-color: var(--black); */
         padding: 1em;
         text-align: center;
+        padding-top: 100px;
 
         /* background: url(assets/night_sky_moon.png);
         background-size: 600%;
