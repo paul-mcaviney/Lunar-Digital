@@ -517,7 +517,7 @@ a {
     #service-header::before {
         content: '';
         position: absolute;
-        top: -3px;
+        top: 1px;
         left: 50%;
         margin-left: -150px;
         background: url(assets/scrollwork_silver_left.png);
@@ -531,7 +531,7 @@ a {
     #service-header::after {
         content: '';
         position: absolute;
-        top: -3px;
+        top: 1px;
         right: 50%;
         margin-right: -150px;
         background: url(assets/scrollwork_silver_left.png);
@@ -707,6 +707,7 @@ a {
     }
 
     .price-card ul {
+        font-size: 1.1rem;
         margin-top: 20px;
         margin-bottom: 80px;
         padding-right: 1.5em;
@@ -751,7 +752,7 @@ a {
         text-align: center;
         color: var(--black);
         font-size: 1.2rem;
-        font-weight: 400;
+        font-weight: 500;
         padding: 0 2em;
     }
 
@@ -784,7 +785,7 @@ a {
 
     #contact {
         /* background-color: var(--black); */
-        padding: 1em;
+        padding: 0 10%;
         text-align: center;
         padding-top: 100px;
 
@@ -805,6 +806,7 @@ a {
     }
 
     #contact form {
+        max-width: 400px;
         display: block;
         position: relative;
         background: rgba(1,1,1,0.7);
@@ -816,13 +818,20 @@ a {
 
     #name-label, #company-label, #email-label, #text-field-label {
         position: absolute;
-        left: 50%;
-        margin-left: -105px;
+        left: 40px;
+        /* margin-left: -105px; */
         font-size: 1.1rem;
+    }
+
+    .form-subscript {
+        position: relative;
+        top: -2px;
+        font-size: 0.75rem;
     }
 
     .form-control {
         margin-bottom: 20px;
+        width: 80%;
         line-height: 2rem;
         border-radius: 25px;
         padding: 0 1rem;
@@ -834,8 +843,11 @@ a {
 
     #text-field {
         /* Not 100% sure the text starts at the beginning of the text field */
-        max-width: 220px;
-        min-width: 220px;
+        width: 80%;
+        max-width: 80%;
+        min-width: 80%;
+        /* max-width: 220px;
+        min-width: 220px; */
         border-radius: 25px;
         min-height: 125px;
         margin-bottom: 25px;
@@ -853,7 +865,9 @@ a {
     }
 
     #contact .wave-bottom {
-        margin-bottom: -22px;
+        position: relative;
+        bottom: -15px;
+        /* margin-bottom: -37px; */
         margin-top: 50px;
     }
 
