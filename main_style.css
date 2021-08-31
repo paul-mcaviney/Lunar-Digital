@@ -131,6 +131,14 @@ a {
         height: 40px;
         z-index: 100;
         overflow: show;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: space-evenly; */
+    }
+
+    .hamburger:hover {
+        cursor: pointer;
+
     }
 
     .bar {
@@ -214,7 +222,8 @@ a {
         display: inline-block;
         position: absolute;
         bottom: -12px;
-        left: 108px;
+        /* left: 108px; */
+        left: 36%;
         width: 30%;
         height: 2px;
         background-color: var(--white);
@@ -337,13 +346,15 @@ a {
         font-size: 1.25rem;
         font-weight: 600;
         z-index: 5;
+        
     }
 
     .button-link-full {
         background-color: var(--white);
         color: var(--black);
-        box-shadow: 0 0 10px var(--white);
-    }
+        box-shadow: 0 0 10px var(--white); 
+        transition: 0.3s;
+       }
 
     .button-link-hollow {
         background-color: rgba(233, 233, 233, 0);
@@ -352,18 +363,21 @@ a {
         color: var(--main-blue);
         font-weight: 400;
         margin-bottom: 75px;
+        transition: 0.4s;
     }
 
     #hero-forest {
         position: absolute;
         bottom: 0;
         right: 0;
-        width: 100%;
+        width: 175%;
         max-width: 175%;
         height: auto;
         height: 80px;
         max-height: 110px;
         z-index: 5;
+        filter: drop-shadow(0 25px 15px var(--white));
+        margin-bottom: -2px;
     }
 
 
@@ -424,8 +438,28 @@ a {
         font-size: 3rem;
     }
 
+    #hero h1 {
+        margin-bottom: 40px;
+    }
+
+    #hero-quote-button {
+        margin-bottom: 40px;
+    }
+
     #button-break {
         display: none;
+    }
+
+    .button-link-full:hover {
+        box-shadow: 0 0 15px var(--white);
+    }
+
+    .button-link-hollow:hover {
+        box-shadow: inset 0 0 10px 2px var(--main-blue), 0 0 10px var(--main-blue);
+    }
+
+    #hero-forest{
+        height: 250px;
     }
 
 }
