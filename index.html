@@ -26,6 +26,8 @@
     <nav> 
 
         <ul class="nav-menu">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            
             <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
             
             <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
@@ -63,16 +65,20 @@
             Website Design <span class="title-separators blue-word">||</span> Digital Marketing <span class="title-separators blue-word second-separator">||</span> Creative Media <br><span class="sub-title">Digital Solutions For Small Businesses</span>
         </h1>
 
-        <a class="button-link button-link-full" href="#contact">Get a Quote</a>
-        <br>
+        <div id="hero-buttons-div">
+
+        <a class="button-link button-link-full" id="hero-quote-button" href="#contact">Get a Quote</a>
+        <br id="button-break">
         <a class="button-link button-link-hollow" href="#about">Learn More</a>
+
+        </div>
 
 
         <!-- TODO: Make a couple of different size images for different screen sizes of this one -->
         <picture>
-            <source srcset="assets/forest1.webp" type="image/webp">
-            <source srcset="assets/forest1.png" type="image/png">
-            <img id="hero-forest" aria-hidden="true" src="assets/forest1.png" alt="">
+            <source srcset="assets/forest2.webp" type="image/webp">
+            <source srcset="assets/forest2.png" type="image/png">
+            <img id="hero-forest" aria-hidden="true" src="assets/forest2.png" alt="">
         </picture>
 
     </section>
@@ -439,7 +445,7 @@
 
     </section>
 
-    <!-- TODO: Still need to add a previous work section and also a tetimonials section -->
+    <!-- TODO: Still need to add a who I am section, a previous work section and also a testimonials section -->
 
     <!-------------------------------->
     <!--           Footer           -->
