@@ -157,7 +157,7 @@
             <picture>
                 <source srcset="assets/marketing.webp" type="image/webp">
                 <source srcset="assets/marketing.png" type="image/png">
-                <img src="assets/marketing.png" alt="a cartoon man standing by a monitor that is displaying website analytics">
+                <img id="marketing-image" src="assets/marketing.png" alt="a cartoon man standing by a monitor that is displaying website analytics">
             </picture>
 
             <h3 class="blue-word">
@@ -237,7 +237,7 @@
 
     <section id="pricing">
 
-        <!-- do a gradient background for this section -->
+        <div id="pricing-cards-div">
 
         <!-- Best Value -->
         <div class="price-card" id="best-value-price-card">
@@ -316,7 +316,7 @@
             </p>
 
             <!-- will link to an actual more detailed pricing page later -->
-            <a class="button-link button-link-full price-button" href="#contact">Learn More</a>
+            <a id="premium-button" class="button-link button-link-full price-button" href="#contact">Learn More</a>
 
         </div>
 
@@ -364,6 +364,8 @@
             <source srcset="assets/wave1-blue.png" type="image/png">
             <img id="price-bottom-wave" class="wave-top" aria-hidden="true" id="wave-layer-mask" src="assets/wave1-blue.png" alt="">
         </picture>
+
+    </div>
 
         <p id="bottom-text">
             Need something more than a basic informational website? A blog or e-commerce site perhaps?<br><br><a id="bottom-text-link" href="#contact">Drop us a line!</a><br><br>We'll gladly have a conversation about building something more complicated for you. 
