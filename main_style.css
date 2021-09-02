@@ -279,7 +279,7 @@ a {
 
     #hero {
         width: 100%;
-        height: 95vh;
+        height: 93vh;
         /* min-height: 568px; */
         text-align: center;
         overflow: hidden;
@@ -526,6 +526,7 @@ a {
         display: relative;
         text-align: center;  
         padding: 2em 2em;
+        padding-top: 3em;
         background: var(--black);   
         z-index: 3;   
     }
