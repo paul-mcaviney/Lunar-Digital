@@ -34,7 +34,7 @@ html.active {
 body {
     margin: 0;
     padding: 0;
-    background: url(assets/blue-night-sky-cover.jpg);
+    background: url(assets/blue-night-sky-cover-min.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;    
