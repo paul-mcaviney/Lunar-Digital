@@ -279,6 +279,7 @@ a {
     #hero {
         width: 100%;
         height: 100vh;
+        min-height: 568px;
         text-align: center;
         overflow: hidden;
         z-index: 1;
@@ -435,6 +436,11 @@ a {
 
 @media only screen and (min-width: 768px) {
     
+    /* TODO: test this sizing */
+    #hero {
+        min-height: 750px;
+    }
+
     #hero-logo {
         max-width: 500px;
         padding-top: 30px;
@@ -484,6 +490,10 @@ a {
 
     #hero h1 {
         margin-bottom: 40px;
+    }
+
+    .button-link {
+        font-size: 1.25rem;
     }
 
     #hero-quote-button {
@@ -922,7 +932,7 @@ a {
     }
 
     .price-card ul {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         line-height: 1.7rem;
         margin-bottom: 100px;
     }
@@ -945,33 +955,43 @@ a {
 
     .price-button {
         margin-top: 50px;
+        font-size: 1.4rem;
+        text-align: center;
+        padding-right: 25px;
     }
 
     #bottom-text {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     #bottom-text-link {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
 }
 
 @media only screen and (min-width: 1024px) {
     
+    #pricing p {
+        font-size: 1.2rem;
+    }
+
     #pricing-cards-div {
         display: flex;
         flex-direction: row;
-        margin: 3em;
+        justify-content: center;
+        /* margin: 3em; */
     }
 
     .price-card {
-        margin-bottom: 0;
+        margin: 0;
     }
 
     #best-value-price-card {
         order: 2;
-        width: 625px;
+        /* width: 625px; */
+        width: 329px;
+        max-width: 329px;
         position: relative;
         top: -50px;
         background: rgba(1,1,1,0.9);
@@ -980,23 +1000,31 @@ a {
 
     #premium-price-card {
         order: 1;
+        width: 329px;
+        max-width: 329px;
         position: relative;
         left: 20px;
         z-index: 19;
-        margin-bottom: 11px;
+        margin-bottom: 60px;
     }
 
     #premium-price-card ul {
-        margin-bottom: 130px;
+        margin-bottom: 100px;
+    }
+
+    .price-button {
+        text-align: center;
+        padding-right: 15px;
     }
 
     #premium-button {
-        margin-top: 65px;
+        margin-top: 75px;
     }
 
     #pricing #value-badge {
         width: 200px;
-        left: 60px;
+        left: 50%;
+        margin-left: -100px;
         top: -125px;
     }
 
@@ -1007,7 +1035,7 @@ a {
     }
 
     #pricing #basic-crown {
-        right: -78px;
+        right: -40%;
         top: -58px;
         transform: rotate(26deg);
     }
@@ -1016,6 +1044,8 @@ a {
         order: 3;
         position: relative;
         right: 20px;
+        width: 329px;
+        max-width: 329px;
         z-index: 19;
         margin-bottom: auto;
     }
@@ -1117,12 +1147,10 @@ a {
        }
 
     #text-field {
-        /* Not 100% sure the text starts at the beginning of the text field */
+        color: black;
         width: 80%;
         max-width: 80%;
         min-width: 80%;
-        /* max-width: 220px;
-        min-width: 220px; */
         border-radius: 25px;
         min-height: 125px;
         margin-bottom: 25px;
@@ -1137,6 +1165,7 @@ a {
     #contact-submit {
         width: 150px;
         padding-top: 0;
+        font-size: 1.1rem;
     }
 
     #contact .wave-bottom {
@@ -1156,15 +1185,16 @@ a {
     }
 
     #contact p {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .decorative-line-right {
         transform: rotateZ(270deg);
         display: inline-block;
         position: absolute;
-        top: 47%;
-        left: -175px;
+        top: 47.5%;
+        left: 50%;
+        margin-left: -545px;
         width: 550px;
         height: auto;
     }
@@ -1174,7 +1204,8 @@ a {
         display: inline-block;
         position: absolute;
         top: 47%;
-        right: -175px;
+        right: 50%;
+        margin-right: -545px;
         width: 550px;
         height: auto;
     }
@@ -1185,7 +1216,7 @@ a {
     }
 
     #name-label, #company-label, #email-label, #text-field-label {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
     }
 
     .form-subscript {
@@ -1199,6 +1230,7 @@ a {
     #contact-submit {
         width: 200px;
         margin: 1em auto;
+        font-size: 1.2rem;
     }
 
     #contact .wave-bottom {
@@ -1208,7 +1240,9 @@ a {
 }
 
 @media only screen and (min-width: 1024px) {
-    
+    #contact p {
+        font-size: 1.2rem;
+    }
 }
 
 @media only screen and (min-width: 1300px) {
@@ -1239,8 +1273,35 @@ a {
         max-width: 320px;
         margin: 2rem auto;
     }
+
     footer a {
         color: var(--main-blue);
+        font-size: 1.4rem;
+        transition: 0.3s;
+    }
+
+    footer a::after {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        bottom: -12px;
+        /* left: 108px; */
+        left: 0%;
+        /* margin-left: -15px; */
+        width: 100%;
+        height: 2px;
+        background-color: var(--main-blue);
+        box-shadow: 0 5px 7px var(--main-blue);
+        transform: scaleX(0);
+        transition: 0.3s;
+    }
+
+    footer a:hover {
+        text-shadow: 0 0 5px var(--main-blue);
+    }
+
+    footer a:hover::after {
+        transform: scaleX(1);
     }
 
     footer ul {
