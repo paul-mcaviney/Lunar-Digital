@@ -1168,6 +1168,7 @@ a {
         width: 150px;
         padding-top: 0;
         font-size: 1.1rem;
+        border: 1px solid var(--white);
     }
 
     #contact .wave-bottom {
