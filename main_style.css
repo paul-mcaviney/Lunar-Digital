@@ -4,6 +4,21 @@
     --white: #FFF;
 }
 
+@font-face {
+    font-family: "Quintessential";
+    src: url(assets/Fonts/Quintessential-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url(assets/Fonts/Raleway-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Ramaraja";
+    src: url(assets/Fonts/Ramaraja-Regular.ttf);
+}
+
 html, body {
     max-width: 100%;
     overflow-x: hidden;
@@ -279,7 +294,7 @@ a {
 
     #hero {
         width: 100%;
-        height: 93vh;
+        height: 93vh;  /* TODO: detect if device has a bottom navigation and adjust height accordingly  */
         /* min-height: 568px; */
         text-align: center;
         overflow: hidden;
@@ -921,14 +936,14 @@ a {
 
     #pricing .pricing-image {
         max-width: 250px;
-        left: 91px;
-        top: -158px;
+        left: 120px;
+        top: -120px;
     }
 
     #pricing #basic-crown, #pricing #premium-crown {
         max-width: 140px;
-        top: -78px;
-        left: 148px;
+        top: -59px;
+        left: 165px;
     }
     
     .price-card {
@@ -1035,14 +1050,14 @@ a {
     }
 
     #pricing #premium-crown {
-        left: -33px;
-        top: -59px;
+        left: -17px;
+        top: -42px;
         transform: rotate(-25deg);
     }
 
     #pricing #basic-crown {
         right: -40%;
-        top: -58px;
+        top: -42px;
         transform: rotate(26deg);
     }
 
