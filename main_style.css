@@ -46,14 +46,39 @@ html.active {
 
 }
 
-body {
+@media only screen and (min-width: 0) {
+    body {
+        margin: 0;
+        padding: 0;
+        background: url(assets/blue-night-sky-cover-min-small.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;    
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        background: url(assets/blue-night-sky-cover-min-med.jpg);
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    body {
+        background: url(assets/blue-night-sky-cover-min-large.jpg)
+    }
+}
+
+
+
+/* body {
     margin: 0;
     padding: 0;
     background: url(assets/blue-night-sky-cover-min.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;    
-}
+} */
 
 h1, h2, h3, h4 {
     font-family: 'Quintessential', cursive;
