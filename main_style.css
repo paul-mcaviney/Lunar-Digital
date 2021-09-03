@@ -56,7 +56,8 @@ html.active {
         background: url(assets/blue-night-sky-cover-min-small.jpg);
         background-size: cover;
         background-repeat: no-repeat;
-        background-attachment: fixed;    
+        background-attachment: fixed; 
+        scroll-behavior: smooth;   
     }
 }
 
