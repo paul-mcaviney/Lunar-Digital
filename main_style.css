@@ -564,7 +564,7 @@ a {
         margin: 0 auto;
         right: 50%;
         /* margin-right: 30px; */
-        filter: drop-shadow(0 -1px 1px var(--white));
+        filter: drop-shadow(0 -1px 2px var(--white));
     }
 
 }
