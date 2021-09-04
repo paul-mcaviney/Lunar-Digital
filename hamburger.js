@@ -19,4 +19,12 @@ function closeMenu() {
 }
 
 
+// This is to try and avoid the system navigation bar at the bottom of mobile devices from covering some content in 100vh hero
+
+window.onresize = function() {
+    document.body.height =window.innerHeight;
+}
+
+window.onresize();
+
 
