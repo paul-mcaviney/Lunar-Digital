@@ -25,8 +25,7 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
+    height: 100vh;
 }
 
 html {
@@ -340,8 +339,7 @@ a {
 
     #hero {
         width: 100%;
-        min-height: 100vh;
-        /* height: 93vh;  TODO: detect if device has a bottom navigation and adjust height accordingly  */
+        height: 93vh;  /* TODO: detect if device has a bottom navigation and adjust height accordingly  */
         /* min-height: 568px; */
         text-align: center;
         overflow: hidden;
