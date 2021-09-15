@@ -2,6 +2,7 @@
     --main-blue: #62B5E3;
     --black: #111;
     --white: #FFF;
+    --window-height: 100vh;
 }
 
 @font-face {
@@ -64,6 +65,14 @@ html.active {
 @media only screen and (min-width: 768px) {
     body {
         background: url(assets/blue-night-sky-cover-min-med.jpg);
+        background-size: cover;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    body {
+        background: url(assets/blue-night-sky-cover-min-large.jpg);
+        background-size: cover;
     }
 }
 
@@ -339,8 +348,9 @@ a {
 
     #hero {
         width: 100%;
-        height: 93vh;  /* TODO: detect if device has a bottom navigation and adjust height accordingly  */
-        /* min-height: 568px; */
+        /*height: 100vh;*/
+        /* --window-height is set through scripts.js */
+        height: var(--window-height);
         text-align: center;
         overflow: hidden;
         z-index: 1;
@@ -491,30 +501,16 @@ a {
 
 }
 
-/* TODO: make the button spacing specifically for ipad pro resolution */
-
-/* @media only screen and (min-height: 653px) {
-
-    #hero-buttons-div {
-        height: 50vh;
-    }
-
-} */
-
 @media only screen and (min-width: 768px) {
-    
-    /* TODO: test this sizing */
-    /* #hero {
-        min-height: 750px;
-    } */
 
     #hero-logo {
         max-width: 500px;
-        padding-top: 30px;
+        padding-top: 15px;
     }
 
     #hero h1 {
         font-size: 2.5rem;
+        margin-top: 15px;
         /* margin-bottom: 6%; */
     }
 
@@ -532,10 +528,25 @@ a {
         font-size: 1.75rem;
     }
 
+    #hero-buttons-div {
+        flex-direction: row;
+        height: 60px;
+        width: 500px;
+        margin: 0 auto;
+    }
+
     .button-link {
         width: 150px;
         line-height: 3rem;
         font-size: 1.75rem;
+    }
+
+    #hero-quote-button {
+        padding-top: 0.2em;
+    }
+
+    #hero-hollow-button {
+        margin-bottom: 0;
     }
 
     #hero-forest {
@@ -548,11 +559,28 @@ a {
 
 }
 
+/* Need to change style for tablets */
+@media only screen and (min-height: 1024px) {
+
+    #hero h1 {
+        margin-bottom: 175px;
+    }
+
+    #hero-buttons-div {
+        flex-direction: column;
+    }
+
+    #hero-quote-button {
+        margin-bottom: 50px;
+    }
+
+}
+
 @media only screen and (min-width: 1024px) {
     
-    #hero {
+    /* #hero {
         height: 100vh;
-    }
+    } */
 
     .second-separator {
         display: inline;
@@ -569,6 +597,7 @@ a {
 
     #hero-quote-button {
         margin-bottom: 40px;
+        height: 3rem;
     }
 
     /* #button-break {
@@ -578,6 +607,26 @@ a {
     #hero-forest{
         height: 250px;
     }
+
+}
+
+@media only screen and (min-height: 1300px) {
+
+    #hero-logo {
+        width: 600px;
+        max-width: 600px;
+        padding-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    #hero h1 {
+        margin-bottom: 300px;
+    }
+
+    #hero-quote-button, #hero-hollow-button {
+        width: 200px;
+        font-size: 2rem;
+        }
 
 }
 
@@ -1495,3 +1544,55 @@ a {
 @media only screen and (min-width: 1300px) {
     
 }
+
+
+
+
+
+/**********************************************************/
+/**********************************************************/
+/**********************************************************/
+/**********************************************************/
+/**********************************************************/
+/**********************************************************/
+/**********************************************************/
+/**********************************************************/
+
+
+/***********************************/
+/*          Questionnaire          */
+/***********************************/
+
+@media only screen and (min-width: 0) {
+
+    .question-input {
+        color: black;
+        width: 80%;
+        max-width: 80%;
+        min-width: 80%;
+        border-radius: 25px;
+        min-height: 30px;
+        margin-bottom: 25px;
+        font-size: 1.1rem;
+        padding: 0.5rem 1rem;
+        line-height: 1.5rem;
+        background-color: rgba(255,255,255,0.5);
+        -webkit-box-shadow: inset 3.5px 3.5px 3.5px rgba(1,1,1,0.3);
+                box-shadow: inset 3.5px 3.5px 3.5px rgba(1,1,1,0.3);
+        border: 1px solid #111;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+}
+
+@media only screen and (min-width: 1300px) {
+
+}
+
