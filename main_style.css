@@ -68,6 +68,12 @@ html.active {
     }
 }
 
+@media only screen and (min-width: 1024px) {
+    body {
+        background: url(assets/blue-night-sky-cover-min-large.jpg);
+    }
+}
+
 h1, h2, h3, h4 {
     font-family: 'Quintessential', cursive;
 }
@@ -614,6 +620,24 @@ a {
     #hero-forest{
         height: 250px;
     }
+
+}
+
+@media only screen and (min-height: 1300px) {
+
+    #hero-logo {
+        padding-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    #hero h1 {
+        margin-bottom: 300px;
+    }
+
+    #hero-quote-button, #hero-hollow-button {
+        width: 200px;
+        font-size: 2rem;
+        }
 
 }
 
