@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lunar Digital Prospective Client Form">
+    <title>Lunar Digital Prospective Client Form</title>
+
+    <link rel="stylesheet" type="text/css" href="main_style.css" media="screen" /> 
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <div id="background-cover"></div>
+
+    <!-------------------------------->
+    <!--          Contact           -->
+    <!-------------------------------->
+
+    <section id="contact">
+
+        <h2>
+            <span class="blue-word">Client</span> Questionnaire
+        </h2>
+
+        <img loading="lazy" aria-hidden="true" class="decorative-line-right" src="assets/decorative_line_1.png" alt="" width="550px" height="89px">
+
+        <img aria-hidden="true" class="decorative-line-left" src="assets/decorative_line_1.png" alt="" width="550px" height="89px">
+
+        <form name="prospect" method="POST" data-netlify="true">
+            <p>
+                Please fill out the form below and answer as many of the questions as you can. This will help us get a better understanding of exactly what you're looking for.
+            </p>
+
+            <label id="name-label" class="blue-word" for="name">Name</label>
+            <br>
+            <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-control"
+                placeholder="Please Enter Your Name"
+                required
+            />
+            <br>
+
+            <label id="company-label" class="blue-word" for="company">Company Name <span class="form-subscript">(Optional)</span></label>
+            <br>
+            <input
+                type="text"
+                name="company"
+                id="company"
+                class="form-control"
+                placeholder="Please Enter Your Company"
+            />
+            <br>
+
+            <label id="email-label" class="blue-word" for="email">Email</label>
+            <br>
+            <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+                placeholder="Please Enter Your Email"
+                required
+            />
+            <br>
+
+            <hr id="form-hr">
+
+            <br>
+
+            <label class="blue-word question-label" for="1">1. What does your company do? Describe your business in a few sentences.</label>
+            <br>
+            <textarea 
+                type="text" 
+                id="question-1" 
+                class="contact-input question-input" 
+                name="1"
+                ></textarea>
+            <br>
+
+            <label class="blue-word question-label" for="2">2. What services/products do you offer?</label>
+            <br>
+            <textarea 
+                type="text" 
+                id="question-2" 
+                class="contact-input question-input" 
+                name="2"
+                ></textarea>
+            <br>
+
+            <label class="blue-word question-label" for="3">3. Who is your target audience?</label>
+            <br>
+            <textarea 
+                type="text" 
+                id="question-3" 
+                class="contact-input question-input" 
+                name="3"
+                ></textarea>
+            <br>
+
+            <label class="blue-word question-label" for="4">4. What is your unique selling point? What sets you apart from your competitors?</label>
+            <br>
+            <textarea 
+                type="text" 
+                id="question-4" 
+                class="contact-input question-input" 
+                name="4"
+                ></textarea>
+            <br>
+
+
+            <!-- For displaying input field when checked - https://stackoverflow.com/questions/17621515/how-to-show-and-hide-input-fields-based-on-radio-button-selection -->
+            <label class="blue-word question-label" for="5">5. Do you want to create a website from scratch or improve an existing one?</label>
+            <br>
+            <input 
+                type="radio" 
+                id="question-5-1" 
+                class="contact-input question-radio" 
+                name="5"
+                >Create A New Website
+            </input>
+            <input 
+                type="radio" 
+                id="question-5-2" 
+                class="contact-input question-radio" 
+                name="5"
+                >Improve Existing Website
+            </input>
+            <br>
+
+            <button id="contact-submit" class="button-link button-link-full"  type="submit">Let's Chat</button>
+
+        </form>
+
+    </section>
+
+
+    <!-------------------------------->
+    <!--           Footer           -->
+    <!-------------------------------->
+
+
+    <footer>
+
+        <hr>
+
+        <picture>
+            <source srcset="assets/Lunar_Digital_Logo.webp" type="image/webp">
+            <source srcset="assets/Lunar_Digital_Logo.png" type="image/png">
+            <img loading="lazy" id="footer-logo" src="assets/Lunar_Digital_Logo.png" alt="Lunar Digital's logo, a glowing moon with the word 'Lunar' above the word 'Digital'" width="262px" height="118px">
+        </picture>
+
+        <!-- <nav class="footer-nav">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav> -->
+
+        <span id="copywright">&copy; Copywright Lunar Digital 2021</span>
+
+    </footer>
+
+</body>
+
+</html>
