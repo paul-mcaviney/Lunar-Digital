@@ -7,6 +7,8 @@
     <meta name="description" content="Lunar Digital Prospective Client Form">
     <title>Lunar Digital Prospective Client Form</title>
 
+    <script src="scripts.js"></script>
+
     <link rel="stylesheet" type="text/css" href="main_style.css" media="screen" /> 
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
@@ -14,6 +16,32 @@
 <body>
 
     <div id="background-cover"></div>
+
+    <!-------------------------------->
+    <!--         Header Nav         -->
+    <!-------------------------------->
+
+    <nav> 
+
+        <ul class="nav-menu">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            
+            <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+            
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+
+        <div tabindex="0" class="hamburger" type="button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+    </nav>
 
     <!-------------------------------->
     <!--          Contact           -->
@@ -115,23 +143,53 @@
 
 
             <!-- For displaying input field when checked - https://stackoverflow.com/questions/17621515/how-to-show-and-hide-input-fields-based-on-radio-button-selection -->
-            <label class="blue-word question-label" for="5">5. Do you want to create a website from scratch or improve an existing one?</label>
+            <div id="question-5">
+                <label id="5-question" class="blue-word question-label" for="5">5. Do you want to create a website from scratch or improve an existing one?</label>
+                <br>
+                <br>
+                <input 
+                    type="radio" 
+                    id="question-5-1" 
+                    class="contact-input question-radio" 
+                    name="5"
+                    onclick="javascript:oldNewCheck()"
+                    >Create A New Website
+                </input>
+                <br>
+                <input 
+                    type="radio" 
+                    id="question-5-2" 
+                    class="contact-input question-radio" 
+                    name="5"
+                    onclick="javascript:oldNewCheck()"
+                    >Improve Existing Website
+                </input>
+            </div>
             <br>
-            <input 
-                type="radio" 
-                id="question-5-1" 
-                class="contact-input question-radio" 
-                name="5"
-                >Create A New Website
-            </input>
-            <input 
-                type="radio" 
-                id="question-5-2" 
-                class="contact-input question-radio" 
-                name="5"
-                >Improve Existing Website
-            </input>
+
+            <div id="if-checked">
+                <label class="blue-word question-label" for="existing-url">Please enter the URL of your existing website:</label>
+                <br>
+                <input 
+                    type="text" 
+                    id="existing-url" 
+                    class="form-control" 
+                    name="existing-url"
+                    ></input>
+                <br>
+
+                <label class="blue-word question-label" for="existing-dislikes">What do you dislike about your current website? Please be specific.</label>
+                <br>
+                <textarea 
+                    type="text" 
+                    id="existing-dislikes" 
+                    class="contact-input question-input" 
+                    name="existing-url"
+                    ></textarea>
+            </div>
             <br>
+
+
 
             <button id="contact-submit" class="button-link button-link-full"  type="submit">Let's Chat</button>
 
@@ -167,6 +225,8 @@
         <span id="copywright">&copy; Copywright Lunar Digital 2021</span>
 
     </footer>
+
+    <script src="hamburger.js"></script>
 
 </body>
 

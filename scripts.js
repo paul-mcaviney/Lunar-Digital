@@ -1,30 +1,28 @@
-// const deviceType = () => {
-//     const ua = navigator.userAgent;
-
-//     if (/tablet|ipad|playbook|silk|(android(?!.*mobi))/i.test(ua)) {
-//         return "tablet";
-//     }
-
-//     else if (/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(ua)) {
-//         return "mobile";
-//     }
-//     return "desktop";
-// };
-
-// window.alert(window.innerHeight);
-
+// Code for setting the inner screen size to avoid bottom navigation bar covering content on mobile
 function setWindowHeight() {
     document.documentElement.style.setProperty('--window-height', window.innerHeight.toString() + "px");
 }
 
 setWindowHeight();
 
-// //  window.addEventListener('resize', setWindowHeight());
+// Code for toggling options on client-questionnaire.html
+// const ifActive = document.querySelector(".if-active");
+// const newWebsite = document.getElementById("question-5-1");
+// const oldWebsite = document.getElementById("question-5-2");
 
-//  window.onresize = setWindowHeight();
+function oldNewCheck() {
+    const ifActive = document.getElementById("if-checked");
+    const newWebsite = document.getElementById("question-5-1");
+    const oldWebsite = document.getElementById("question-5-2");
 
-// window.alert(getComputedStyle(document.documentElement).getPropertyValue('--window-height').toString());
 
-// if (deviceType() === "desktop") {
-//     // add a class to the forest-trees
-// }
+    if (oldWebsite.checked) {
+        ifActive.style.display = "block";
+        ifActive.style.transition = "0.4s";
+    } else if (newWebsite.checked) {
+        ifActive.style.display = "none";
+    }
+}
+
+
+

@@ -1582,6 +1582,23 @@ a {
         border: 1px solid #111;
     }
 
+    #question-5 {
+        /* text-align: left;
+        display: inline;
+        margin-bottom: 20xp; */
+        text-align: left;
+        margin: 0 1em;
+    }
+
+    #if-checked {
+        display: none;
+        transition: 0.4s;
+        background-color: rgba(255,255,255,0.15);
+        border-radius: 20px;
+        padding-top: 1rem;
+        margin: 0 1em;
+    }
+
 }
 
 @media only screen and (min-width: 768px) {
