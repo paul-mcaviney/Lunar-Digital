@@ -169,7 +169,7 @@ a {
         
         background-color: rgba(255,255,255,0);
         position: fixed;
-        right: 15px;
+        right: 30px;
         top: 15px;
         width: 40px; 
         height: 40px;
@@ -259,7 +259,7 @@ a {
         width: 60px;
         height: 60px;
         top: 25px;
-        right: 25px;
+        right: 30px;
     }
 
     .bar {
@@ -1565,6 +1565,11 @@ a {
 
 @media only screen and (min-width: 0) {
 
+    .question-form {
+        margin-top: -50px;
+        margin-bottom: 100px;
+    }
+
     .question-input {
         color: black;
         width: 80%;
@@ -1582,15 +1587,14 @@ a {
         border: 1px solid #111;
     }
 
-    #question-5 {
-        /* text-align: left;
-        display: inline;
-        margin-bottom: 20xp; */
+    .left {
         text-align: left;
-        margin: 0 1em;
+        margin: 0 1.2em;
+        margin-bottom: -15px;
     }
 
-    #if-checked {
+    /*  TODO: Animate this being displayed. Probably have to mess around with heights or transform etc */
+    .if-checked {
         display: none;
         transition: 0.4s;
         background-color: rgba(255,255,255,0.15);

@@ -47,7 +47,7 @@
     <!--          Contact           -->
     <!-------------------------------->
 
-    <section id="contact">
+    <section id="contact" class="question-form">
 
         <h2>
             <span class="blue-word">Client</span> Questionnaire
@@ -101,7 +101,14 @@
 
             <br>
 
-            <label class="blue-word question-label" for="1">1. What does your company do? Describe your business in a few sentences.</label>
+
+            <!---------------->
+            <!-- Question 1 -->
+            <!---------------->
+
+            <div class="left">
+                <label class="blue-word question-label" for="1">1. What does your company do? Describe your business in a few sentences.</label>
+            </div>
             <br>
             <textarea 
                 type="text" 
@@ -111,7 +118,14 @@
                 ></textarea>
             <br>
 
-            <label class="blue-word question-label" for="2">2. What services/products do you offer?</label>
+
+            <!---------------->
+            <!-- Question 2 -->
+            <!---------------->
+
+            <div class="left">
+                <label class="blue-word question-label" for="2">2. What services/products do you offer?</label>
+            </div>
             <br>
             <textarea 
                 type="text" 
@@ -121,7 +135,14 @@
                 ></textarea>
             <br>
 
-            <label class="blue-word question-label" for="3">3. Who is your target audience?</label>
+
+            <!---------------->
+            <!-- Question 3 -->
+            <!---------------->
+
+            <div class="left">
+                <label class="blue-word question-label" for="3">3. Who is your target audience?</label>
+            </div>
             <br>
             <textarea 
                 type="text" 
@@ -131,7 +152,14 @@
                 ></textarea>
             <br>
 
-            <label class="blue-word question-label" for="4">4. What is your unique selling point? What sets you apart from your competitors?</label>
+
+            <!---------------->
+            <!-- Question 4 -->
+            <!---------------->
+
+            <div class="left">
+                <label class="blue-word question-label" for="4">4. What is your unique selling point? What sets you apart from your competitors?</label>
+            </div>
             <br>
             <textarea 
                 type="text" 
@@ -142,10 +170,12 @@
             <br>
 
 
-            <!-- For displaying input field when checked - https://stackoverflow.com/questions/17621515/how-to-show-and-hide-input-fields-based-on-radio-button-selection -->
-            <div id="question-5">
+            <!---------------->
+            <!-- Question 5 -->
+            <!---------------->
+
+            <div class="left">
                 <label id="5-question" class="blue-word question-label" for="5">5. Do you want to create a website from scratch or improve an existing one?</label>
-                <br>
                 <br>
                 <input 
                     type="radio" 
@@ -167,17 +197,7 @@
             </div>
             <br>
 
-            <div id="if-checked">
-                <label class="blue-word question-label" for="existing-url">Please enter the URL of your existing website:</label>
-                <br>
-                <input 
-                    type="text" 
-                    id="existing-url" 
-                    class="form-control" 
-                    name="existing-url"
-                    ></input>
-                <br>
-
+             <div id="improve-website-div" class="if-checked">
                 <label class="blue-word question-label" for="existing-dislikes">What do you dislike about your current website? Please be specific.</label>
                 <br>
                 <textarea 
@@ -189,6 +209,114 @@
             </div>
             <br>
 
+
+            <!---------------->
+            <!-- Question 6 -->
+            <!---------------->
+
+            <div class="left">
+                <label class="blue-word question-label" for="6">6. Do you already own the domain name for your website?</label>
+                <br>
+                
+                <input 
+                    type="radio" 
+                    id="question-6-1" 
+                    class="contact-input question-radio" 
+                    name="6"
+                    onclick="javascript:existingUrl()"
+                    >No
+                </input>
+                <br>
+                <input 
+                    type="radio" 
+                    id="question-6-2" 
+                    class="contact-input question-radio" 
+                    name="6"
+                    onclick="javascript:existingUrl()"
+                    >Yes
+                </input>
+            </div>
+            <br>
+
+             <div id="url-display" class="if-checked">
+                <label class="blue-word question-label" for="existing-url">Please enter the URL of your existing website:</label>
+                <br>
+                <input 
+                    type="text" 
+                    id="existing-url" 
+                    class="form-control" 
+                    name="existing-url"
+                    ></input>
+                <br>
+             </div>
+             <br>
+
+
+            <!---------------->
+            <!-- Question 7 -->
+            <!---------------->
+
+             <div class="left">
+                <label class="blue-word question-label" for="7">7. What type of website are you interested in?</label>
+                <br>
+                
+                <input 
+                    type="radio" 
+                    id="question-7-1" 
+                    class="contact-input question-radio" 
+                    name="7"
+                    onclick="javascript:otherDisplay()"
+                    >Brochure / Informational
+                </input>
+                <br>
+                <input 
+                    type="radio" 
+                    id="question-7-2" 
+                    class="contact-input question-radio" 
+                    name="7"
+                    onclick="javascript:otherDisplay()"
+                    >Blog
+                </input>
+                <br>
+                <input 
+                    type="radio" 
+                    id="question-7-3" 
+                    class="contact-input question-radio" 
+                    name="7"
+                    onclick="javascript:otherDisplay()"
+                    >E-Commerce / Online-store
+                </input>
+                <br>
+                <input 
+                    type="radio" 
+                    id="question-7-4" 
+                    class="contact-input question-radio" 
+                    name="7"
+                    onclick="javascript:otherDisplay()"
+                    >Other
+                </input>
+                <br>
+            </div>
+            <br>
+            <div id="other-input" class="if-checked">
+                <label class="blue-word question-label" for="other-input">Please specify:</label>
+                <br>
+                <input 
+                    type="text" 
+                    id="other-input" 
+                    class="form-control" 
+                    name="other-input"
+                    ></input>
+                <br>
+             </div>
+            <br>
+
+
+            <!---------------->
+            <!-- Question 8 -->
+            <!---------------->
+
+            
 
 
             <button id="contact-submit" class="button-link button-link-full"  type="submit">Let's Chat</button>
