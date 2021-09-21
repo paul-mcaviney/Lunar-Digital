@@ -38,11 +38,33 @@ function existingUrl() {
 function otherDisplay() {
     const other = document.getElementById("question-7-4");
     const otherInput = document.getElementById("other-input");
+    const classThing = document.getElementsByClassName("if-checked");
 
     if (other.checked) {
         otherInput.style.display = "block";
     } else {
         otherInput.style.display = "none";
+    }
+}
+
+function platformDisplay() {
+    const other = document.getElementById("question-9-5");
+
+    if (other.checked) {
+        document.getElementById("platform-input").style.display = "block";
+    } else {
+        document.getElementById("platform-input").style.display = "none";
+    }
+}
+
+
+function keywordDisplay() {
+    const yes = document.getElementById("question-11-1");
+
+    if (yes.checked) {
+        document.getElementById("keyword-input").style.display = "block";
+    } else {
+        document.getElementById("keyword-input").style.display = "none";
     }
 }
 

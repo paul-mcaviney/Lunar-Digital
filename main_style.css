@@ -1593,7 +1593,7 @@ a {
         margin-bottom: -15px;
     }
 
-    /*  TODO: Animate this being displayed. Probably have to mess around with heights or transform etc */
+    /*  TODO: Animate this being displayed. Probably have to mess around with heights or transform etc  -- might be able to do it with the visibility property but can't seem to get it working*/
     .if-checked {
         display: none;
         transition: 0.4s;
@@ -1603,6 +1603,10 @@ a {
         margin: 0 1em;
     }
 
+    .short-line {
+        width: 150px;
+        height: 0.5px;
+    }
 }
 
 @media only screen and (min-width: 768px) {

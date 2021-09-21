@@ -316,8 +316,210 @@
             <!-- Question 8 -->
             <!---------------->
 
+            <div class="left">
+                <label class="blue-word question-label" for="8">8. Please enter the URL of 2 or 3 reference websites that you like. What do you like about them?</label>
+            </div>
+            <br>
+            <span>Please enter a URL</span>
+            <input 
+                type="text" 
+                id="question-8-url-1" 
+                class="form-control" 
+                name="8"
+                 ></input>
+            <br>
+            <span>Please explain why you like this website</span>
+            <textarea 
+                type="text" 
+                id="question-8-text-1" 
+                class="contact-input question-input" 
+                name="8"
+                ></textarea>
+            <br>
+            <hr class="short-line">
+            <br>
+            <span>Please enter a URL</span>
+            <input 
+                type="text" 
+                id="question-8-url-2" 
+                class="form-control" 
+                name="8"
+                 ></input>
+            <br>
+            <span>Please explain why you like this website</span>
+            <textarea 
+                type="text" 
+                id="question-8-text-2" 
+                class="contact-input question-input" 
+                name="8"
+                ></textarea>
+            <br>
+            <hr class="short-line">
+            <br>
+            <span>Please enter a URL</span>
+            <input 
+                type="text" 
+                id="question-8-url-3" 
+                class="form-control" 
+                name="8"
+                 ></input>
+            <br>
+            <span>Please explain why you like this website</span>
+            <textarea 
+                type="text" 
+                id="question-8-text-3" 
+                class="contact-input question-input" 
+                name="8"
+                ></textarea>
+            <br>
             
 
+            <!---------------->
+            <!-- Question 9 -->
+            <!---------------->
+
+            <div class="left">
+                <label class="blue-word question-label" for="9">9. Do you have a specific platform in mind?</label>
+                <br>
+                
+                <input 
+                    type="radio" 
+                    id="question-9-1" 
+                    class="contact-input question-radio" 
+                    name="9"
+                    onclick="javascript:platformDisplay()"
+                    >None
+                </input>
+                <br>
+                <input 
+                    type="radio" 
+                    id="question-9-2" 
+                    class="contact-input question-radio" 
+                    name="9"
+                    onclick="javascript:platformDisplay()"
+                    >Custom Build / Hand Coded
+                </input>
+                <br>
+                <input 
+                    type="radio" 
+                    id="question-9-3" 
+                    class="contact-input question-radio" 
+                    name="9"
+                    onclick="javascript:platformDisplay()"
+                    >Wordpress
+                </input>
+                <br>
+                <input 
+                    type="radio" 
+                    id="question-9-4" 
+                    class="contact-input question-radio" 
+                    name="9"
+                    onclick="javascript:platformDisplay()"
+                    >Shopify
+                </input>
+                <br>
+                <input 
+                    type="radio" 
+                    id="question-9-5" 
+                    class="contact-input question-radio" 
+                    name="9"
+                    onclick="javascript:platformDisplay()"
+                    >Other
+                </input>
+                <br>
+            </div>
+            <br>
+            <div id="platform-input" class="if-checked">
+                <label class="blue-word question-label" for="other-input">Please specify:</label>
+                <br>
+                <input 
+                    type="text" 
+                    id="platform-input" 
+                    class="form-control" 
+                    name="platform-input"
+                    ></input>
+                <br>
+             </div>
+            <br>
+
+
+            <!----------------->
+            <!-- Question 10 -->
+            <!----------------->
+
+            <div class="left">
+                <label class="blue-word question-label" for="10">10. Does your company have a brand guide to follow for styling?</label>
+                <br>
+                
+                <input 
+                    type="radio" 
+                    id="question-10-1" 
+                    class="contact-input question-radio" 
+                    name="10"
+                    >Yes
+                </input>
+                <br>
+                <input 
+                    type="radio" 
+                    id="question-10-2" 
+                    class="contact-input question-radio" 
+                    name="10"
+                    >No
+                </input>
+                <br>
+            </div>
+            <br>
+            <br>
+
+
+            <!----------------->
+            <!-- Question 11 -->
+            <!----------------->
+
+            <div class="left">
+                <label class="blue-word question-label" for="11">11. Do you have a list of keywords you would like to target for SEO? </label>
+                <br>
+                
+                <input 
+                    type="radio" 
+                    id="question-11-1" 
+                    class="contact-input question-radio" 
+                    name="10"
+                    onclick="javascript:keywordDisplay()"
+                    >Yes
+                </input>
+                <br>
+                <input 
+                    type="radio" 
+                    id="question-11-2" 
+                    class="contact-input question-radio" 
+                    name="10"
+                    onclick="javascript:keywordDisplay()"
+                    >No
+                </input>
+                <br>
+            </div>
+            <br>
+            <div id="keyword-input" class="if-checked">
+                <label class="blue-word question-label" for="keyword-input">Please enter a list of keywords:</label>
+                <br>
+                <textarea 
+                    type="text" 
+                    id="keyword-input" 
+                    class="form-control" 
+                    name="keyword-input"
+                    ></textarea>
+                <br>
+             </div>
+             <br>
+
+
+
+
+
+            <!------------------>
+            <!--    Submit    -->
+            <!------------------>
 
             <button id="contact-submit" class="button-link button-link-full"  type="submit">Let's Chat</button>
 
