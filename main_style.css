@@ -1576,6 +1576,10 @@ a {
         left: 10px;
     }
 
+    #questionnaire-nav {
+        margin-top: -52px;
+    }
+
     #client-questionnaire {
         padding: 0 1em;
         text-align: center;
@@ -1661,6 +1665,14 @@ a {
 
 
 @media only screen and (min-width: 768px) {
+
+    #little-logo {
+        position: absolute;
+    }
+
+    #questionnaire-nav {
+        margin-top: 0;
+    }
 
 }
 
