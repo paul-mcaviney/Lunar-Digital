@@ -17,6 +17,17 @@
 
     <div id="background-cover"></div>
 
+
+    <!-------------------------------->
+    <!--            Logo            -->
+    <!-------------------------------->
+
+    <picture>
+        <source srcset="assets/Lunar_Digital_Logo.webp" type="image/webp">
+        <source srcset="assets/Lunar_Digital_Logo.png" type="image/png">
+        <img id="little-logo" src="assets/Lunar_Digital_Logo.png" alt="Lunar Digital's logo, a glowing moon with the word 'Lunar' above the word 'Digital'">
+    </picture>
+
     <!-------------------------------->
     <!--         Header Nav         -->
     <!-------------------------------->
@@ -47,17 +58,13 @@
     <!--          Contact           -->
     <!-------------------------------->
 
-    <section id="contact" class="question-form">
+    <section id="client-questionnaire" class="question-form">
 
         <h2>
             <span class="blue-word">Client</span> Questionnaire
         </h2>
 
-        <img loading="lazy" aria-hidden="true" class="decorative-line-right" src="assets/decorative_line_1.png" alt="" width="550px" height="89px">
-
-        <img aria-hidden="true" class="decorative-line-left" src="assets/decorative_line_1.png" alt="" width="550px" height="89px">
-
-        <form id="client-form" name="prospect" method="POST" data-netlify="true">
+        <form id="client-form" class="lunar-form" name="prospect-questionnaire" method="POST" data-netlify="true">
             <p>
                 Please fill out the form below and answer as many of the questions as you can. This will help us get a better understanding of exactly what you're looking for.
             </p>
@@ -852,7 +859,7 @@
             <!----------------->
 
             <p class="bottom-form-text">
-                Thank you for taking the time to fill out this form! If you still have any questions or concerns feel free to email us. We would be glad to setup a phone or video call to help you through the form.
+                Thank you for taking the time to fill out this form! If you still have any questions or concerns feel free to <a id="form-email-link" href="mailto:paul@lunardigital.ca? subject=Client Concerns via Questionnaire" target="_blank">email us</a>. We would be glad to setup a phone or video call to help you through the form.
             </p>
 
             <p class="bottom-form-text">

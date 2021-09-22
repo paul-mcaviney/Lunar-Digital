@@ -1272,7 +1272,8 @@ a {
         display: none;
     }
 
-    #contact form {
+    /* #contact form { */
+    .lunar-form {
         max-width: 400px;
         display: block;
         position: relative;
@@ -1384,7 +1385,8 @@ a {
         height: auto;
     }
 
-    #contact form {
+    /* #contact form { */
+    .lunar-form {
         padding: 3em 1em;
         position: relative;
     }
@@ -1444,6 +1446,7 @@ a {
     #footer-logo {
         display: block;
         width: 70%;
+        height: auto;
         max-width: 320px;
         margin: 2rem auto;
     }
@@ -1565,12 +1568,28 @@ a {
 
 @media only screen and (min-width: 0) {
 
-    .question-form {
-        margin-top: -50px;
-        margin-bottom: 100px;
+    #little-logo {
+        width: 125px;
+        height: auto;
+        position: relative;
+        top: 10px;
+        left: 10px;
     }
 
+    #client-questionnaire {
+        padding: 0 1em;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 150px;
+        position: relative;
+    }
+
+
     #client-form p {
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 0 1rem;
+        margin-bottom: 50px;
         font-size: 1rem;
     }
 
@@ -1615,13 +1634,27 @@ a {
     .split {
         margin: 1em;
         text-align: left;
-        column-count: 2;
+        column-count: 1;
     }
 
     .bottom-form-text {
         font-size: 1rem;
     }
 
+    #form-email-link {
+        font-size: 1.2rem;
+        color: var(--main-blue);
+    }
+
+
+}
+
+
+@media only screen and (min-width: 460px) {
+
+    .split {
+        column-count: 2;
+    }
 
 }
 
