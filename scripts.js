@@ -68,5 +68,25 @@ function keywordDisplay() {
     }
 }
 
+function pageTypeDisplay() {
+    const other = document.getElementById("question-13-6");
+
+    if (other.checked) {
+        document.getElementById("page-input").style.display = "block";
+    } else {
+        document.getElementById("page-input").style.display = "none";
+    }
+}
+
+function featureDisplay() {
+    const other = document.getElementById("question-14-6");
+
+    if (other.checked) {
+        document.getElementById("feature-input").style.display = "block";
+    } else {
+        document.getElementById("feature-input").style.display = "none";
+    }
+}
+
 
 

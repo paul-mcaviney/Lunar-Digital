@@ -1570,6 +1570,10 @@ a {
         margin-bottom: 100px;
     }
 
+    #client-form p {
+        font-size: 1rem;
+    }
+
     .question-input {
         color: black;
         width: 80%;
@@ -1607,7 +1611,21 @@ a {
         width: 150px;
         height: 0.5px;
     }
+
+    .split {
+        margin: 1em;
+        text-align: left;
+        column-count: 2;
+    }
+
+    .bottom-form-text {
+        font-size: 1rem;
+    }
+
+
 }
+
+
 
 @media only screen and (min-width: 768px) {
 

@@ -57,7 +57,7 @@
 
         <img aria-hidden="true" class="decorative-line-left" src="assets/decorative_line_1.png" alt="" width="550px" height="89px">
 
-        <form name="prospect" method="POST" data-netlify="true">
+        <form id="client-form" name="prospect" method="POST" data-netlify="true">
             <p>
                 Please fill out the form below and answer as many of the questions as you can. This will help us get a better understanding of exactly what you're looking for.
             </p>
@@ -183,7 +183,7 @@
                     class="contact-input question-radio" 
                     name="5"
                     onclick="javascript:oldNewCheck()"
-                    >Create A New Website
+                    > Create A New Website
                 </input>
                 <br>
                 <input 
@@ -192,7 +192,7 @@
                     class="contact-input question-radio" 
                     name="5"
                     onclick="javascript:oldNewCheck()"
-                    >Improve Existing Website
+                    > Improve Existing Website
                 </input>
             </div>
             <br>
@@ -224,7 +224,7 @@
                     class="contact-input question-radio" 
                     name="6"
                     onclick="javascript:existingUrl()"
-                    >No
+                    > No
                 </input>
                 <br>
                 <input 
@@ -233,7 +233,7 @@
                     class="contact-input question-radio" 
                     name="6"
                     onclick="javascript:existingUrl()"
-                    >Yes
+                    > Yes
                 </input>
             </div>
             <br>
@@ -266,7 +266,7 @@
                     class="contact-input question-radio" 
                     name="7"
                     onclick="javascript:otherDisplay()"
-                    >Brochure / Informational
+                    > Brochure / Informational
                 </input>
                 <br>
                 <input 
@@ -275,7 +275,7 @@
                     class="contact-input question-radio" 
                     name="7"
                     onclick="javascript:otherDisplay()"
-                    >Blog
+                    > Blog
                 </input>
                 <br>
                 <input 
@@ -284,7 +284,7 @@
                     class="contact-input question-radio" 
                     name="7"
                     onclick="javascript:otherDisplay()"
-                    >E-Commerce / Online-store
+                    > E-Commerce / Online-store
                 </input>
                 <br>
                 <input 
@@ -293,7 +293,7 @@
                     class="contact-input question-radio" 
                     name="7"
                     onclick="javascript:otherDisplay()"
-                    >Other
+                    > Other
                 </input>
                 <br>
             </div>
@@ -388,7 +388,7 @@
                     class="contact-input question-radio" 
                     name="9"
                     onclick="javascript:platformDisplay()"
-                    >None
+                    > None
                 </input>
                 <br>
                 <input 
@@ -397,7 +397,7 @@
                     class="contact-input question-radio" 
                     name="9"
                     onclick="javascript:platformDisplay()"
-                    >Custom Build / Hand Coded
+                    > Custom Build / Hand Coded
                 </input>
                 <br>
                 <input 
@@ -406,7 +406,7 @@
                     class="contact-input question-radio" 
                     name="9"
                     onclick="javascript:platformDisplay()"
-                    >Wordpress
+                    > Wordpress
                 </input>
                 <br>
                 <input 
@@ -415,7 +415,7 @@
                     class="contact-input question-radio" 
                     name="9"
                     onclick="javascript:platformDisplay()"
-                    >Shopify
+                    > Shopify
                 </input>
                 <br>
                 <input 
@@ -424,7 +424,7 @@
                     class="contact-input question-radio" 
                     name="9"
                     onclick="javascript:platformDisplay()"
-                    >Other
+                    > Other
                 </input>
                 <br>
             </div>
@@ -456,7 +456,7 @@
                     id="question-10-1" 
                     class="contact-input question-radio" 
                     name="10"
-                    >Yes
+                    > Yes
                 </input>
                 <br>
                 <input 
@@ -464,7 +464,7 @@
                     id="question-10-2" 
                     class="contact-input question-radio" 
                     name="10"
-                    >No
+                    > No
                 </input>
                 <br>
             </div>
@@ -486,7 +486,7 @@
                     class="contact-input question-radio" 
                     name="10"
                     onclick="javascript:keywordDisplay()"
-                    >Yes
+                    > Yes
                 </input>
                 <br>
                 <input 
@@ -495,7 +495,7 @@
                     class="contact-input question-radio" 
                     name="10"
                     onclick="javascript:keywordDisplay()"
-                    >No
+                    > No
                 </input>
                 <br>
             </div>
@@ -514,14 +514,357 @@
              <br>
 
 
+            <!----------------->
+            <!-- Question 12 -->
+            <!----------------->
 
+            <div class="left">
+                <label class="blue-word question-label" for="12">12. Do you have content ready for your website or would you like us to handle the copywriting?</label>
+                <br>
+                <input 
+                    type="radio" 
+                    id="question-12-1" 
+                    class="contact-input question-radio" 
+                    name="12"
+                    > I will provide my own content
+                </input>
+                <br>
+                <input 
+                    type="radio" 
+                    id="question-12-2" 
+                    class="contact-input question-radio" 
+                    name="12"
+                    > I would like you to handle the copywriting
+                </input>
+                <br>
+            </div>
+            <br>
+            <br>
+
+
+            <!----------------->
+            <!-- Question 13 -->
+            <!----------------->
+
+            <div class="left">
+                <label class="blue-word question-label" for="13">13. What pages do you need on your website?</label>
+                <br>
+            </div>
+            <div class="split">
+                <input 
+                    type="checkbox" 
+                    id="question-13-1" 
+                    class="contact-input question-radio" 
+                    name="13"
+                    > Home Page
+                </input>
+                <br>
+                <input 
+                    type="checkbox" 
+                    id="question-13-2" 
+                    class="contact-input question-radio" 
+                    name="13"
+                    > About Us
+                </input>
+                <br>
+                <input 
+                    type="checkbox" 
+                    id="question-13-3" 
+                    class="contact-input question-radio" 
+                    name="13"
+                    > Products / Services
+                </input>
+                <br>
+                <input 
+                    type="checkbox" 
+                    id="question-13-4" 
+                    class="contact-input question-radio" 
+                    name="13"
+                    > E-commerce Pages
+                </input>
+                <br>
+                <input 
+                    type="checkbox" 
+                    id="question-13-5" 
+                    class="contact-input question-radio" 
+                    name="13"
+                    > Contact Page
+                </input>
+                <br>
+                <input 
+                    type="checkbox" 
+                    id="question-13-6" 
+                    class="contact-input question-radio" 
+                    name="13"
+                    onclick="javascript:pageTypeDisplay()"
+                    > Other
+                </input>
+                <br>
+            </div>
+            <div id="page-input" class="if-checked">
+                <label class="blue-word question-label" for="page-input">Please enter required pages:</label>
+                <br>
+                <textarea 
+                    type="text" 
+                    id="page-input" 
+                    class="form-control" 
+                    name="page-input"
+                    ></textarea>
+                <br>
+             </div>
+             <br>
+            
+            
+            <!----------------->
+            <!-- Question 14 -->
+            <!----------------->
+
+            <div class="left">
+                <label class="blue-word question-label" for="14">14. What features do you require on your website?</label>
+                <br>
+            </div>
+            <div class="split">
+                <input 
+                    type="checkbox" 
+                    id="question-14-1" 
+                    class="contact-input question-radio" 
+                    name="14"
+                    > Contact Form
+                </input>
+                <br>
+                <input 
+                    type="checkbox" 
+                    id="question-14-2" 
+                    class="contact-input question-radio" 
+                    name="14"
+                    > Staff Photos
+                </input>
+                <br>
+                <input 
+                    type="checkbox" 
+                    id="question-14-3" 
+                    class="contact-input question-radio" 
+                    name="14"
+                    > Backend Admin
+                </input>
+                <br>
+                <input 
+                    type="checkbox" 
+                    id="question-14-4" 
+                    class="contact-input question-radio" 
+                    name="14"
+                    > Search Bar
+                </input>
+                <br>
+                <input 
+                    type="checkbox" 
+                    id="question-14-5" 
+                    class="contact-input question-radio" 
+                    name="14"
+                    > Links To Social Media
+                </input>
+                <br>
+                <input 
+                    type="checkbox" 
+                    id="question-14-6" 
+                    class="contact-input question-radio" 
+                    name="14"
+                    onclick="javascript:featureDisplay()"
+                    > Other
+                </input>
+                <br>
+            </div>
+            <div id="feature-input" class="if-checked">
+                <label class="blue-word question-label" for="page-input">Please enter required features:</label>
+                <br>
+                <textarea 
+                    type="text" 
+                    id="feature-input" 
+                    class="form-control" 
+                    name="feature-input"
+                    ></textarea>
+                <br>
+             </div>
+             <br>
+
+
+            <!----------------->
+            <!-- Question 15 -->
+            <!----------------->
+
+            <div class="left">
+                <label class="blue-word question-label" for="15">15. Do you require hosting for your website?</label>
+                <br>
+                <input 
+                    type="radio" 
+                    id="question-15-1" 
+                    class="contact-input question-radio" 
+                    name="15"
+                    > Yes
+                </input>
+                <br>
+                <input 
+                    type="radio" 
+                    id="question-15-2" 
+                    class="contact-input question-radio" 
+                    name="15"
+                    > No
+                </input>
+                <br>
+            </div>
+            <br>
+            <br>
+
+
+            <!----------------->
+            <!-- Question 16 -->
+            <!----------------->
+
+            <div class="left">
+                <label class="blue-word question-label" for="16">16. Do you need help updating and maintaining your website? (We can handle this or book a training session if needed)</label>
+                <br>
+                <input 
+                    type="radio" 
+                    id="question-16-1" 
+                    class="contact-input question-radio" 
+                    name="16"
+                    > I need help maintaining the website
+                </input>
+                <br>
+                <input 
+                    type="radio" 
+                    id="question-16-2" 
+                    class="contact-input question-radio" 
+                    name="16"
+                    > I can maintain the website myself
+                </input>
+                <br>
+                <input 
+                    type="radio" 
+                    id="question-16-3" 
+                    class="contact-input question-radio" 
+                    name="16"
+                    > I will require a training session
+                </input>
+                <br>
+            </div>
+            <br>
+            <br>
+
+
+            <!----------------->
+            <!-- Question 17 -->
+            <!----------------->
+
+            <div class="left">
+                <label class="blue-word question-label" for="17">17. Do you need help with blogging and content marketing?</label>
+                <br>
+                <input 
+                    type="radio" 
+                    id="question-17-1" 
+                    class="contact-input question-radio" 
+                    name="17"
+                    > Yes
+                </input>
+                <br>
+                <input 
+                    type="radio" 
+                    id="question-17-2" 
+                    class="contact-input question-radio" 
+                    name="17"
+                    > No
+                </input>
+                <br>
+            </div>
+            <br>
+            <br>
+
+
+            <!----------------->
+            <!-- Question 18 -->
+            <!----------------->
+
+            <div class="left">
+                <label class="blue-word question-label" for="18">18. Do you require any digital marketing services? (Google Adwords, PPC Advertising, etc)</label>
+                <br>
+                <input 
+                    type="radio" 
+                    id="question-18-1" 
+                    class="contact-input question-radio" 
+                    name="18"
+                    > Yes
+                </input>
+                <br>
+                <input 
+                    type="radio" 
+                    id="question-18-2" 
+                    class="contact-input question-radio" 
+                    name="18"
+                    > No
+                </input>
+                <br>
+            </div>
+            <br>
+            <br>
+
+
+            <!----------------->
+            <!-- Question 19 -->
+            <!----------------->
+
+            <div class="left">
+                <label class="blue-word question-label" for=19">19. Do you have a specific budget range for this project?</label>
+            </div>
+            <br>
+            <input 
+                type="text" 
+                id="question-19" 
+                class="form-control" 
+                name="19"
+                 ></input>
+            <br>
+            <br>
+
+
+            <!----------------->
+            <!-- Question 20 -->
+            <!----------------->
+
+            <div class="left">
+                <label class="blue-word question-label" for=20">20. What is your ideal launch date for the website?</label>
+            </div>
+            <br>
+            <input 
+                type="date" 
+                id="question-20" 
+                class="form-control" 
+                name="20"
+                 ></input>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+
+
+            <!----------------->
+            <!-- End of Form -->
+            <!----------------->
+
+            <p class="bottom-form-text">
+                Thank you for taking the time to fill out this form! If you still have any questions or concerns feel free to email us. We would be glad to setup a phone or video call to help you through the form.
+            </p>
+
+            <p class="bottom-form-text">
+                After submitting the form you will receive a confirmation email stating we received the results and will put together an estimate for the type of website you need and features you require. 
+            </p>
 
 
             <!------------------>
             <!--    Submit    -->
             <!------------------>
 
-            <button id="contact-submit" class="button-link button-link-full"  type="submit">Let's Chat</button>
+            <button id="contact-submit" class="button-link button-link-full"  type="submit">Submit Form</button>
 
         </form>
 
