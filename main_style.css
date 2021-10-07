@@ -100,6 +100,7 @@ p, ul {
 
 a {
     font-family: 'Ramaraja', serif;
+    font-size: 1.3rem;
     text-decoration: none;
 }
 
@@ -1003,7 +1004,7 @@ a {
     .price {
         font-size: 5rem;
         position: relative;
-        text-shadow: 0 0 15px var(--main-blue);
+        text-shadow: 0 0 1px var(--main-blue);
         font-family: 'Karla', sans-serif;
     }
 
@@ -1012,7 +1013,7 @@ a {
         position: absolute;
         color: var(--white);
         font-size: 1rem;
-        top: -4px;
+        top: -10px;
         left: 50%;
         margin-left: -111px;
         width: 100px;
@@ -1025,6 +1026,11 @@ a {
     .price-button {
         padding-right: 8px;
         margin-top: 20px;
+        box-shadow: none;
+    }
+    
+    .price-button:hover {
+        box-shadow: 0 0 10px var(--white);
     }
 
     #price-bottom-wave {
@@ -1334,10 +1340,12 @@ a {
         padding-top: 0;
         font-size: 1.1rem;
         border: 1px solid var(--white);
+        box-shadow: none;
     }
 
     #contact-submit:hover {
         cursor: pointer;
+        box-shadow: 0 0 10px var(--white);
     }
 
     #contact .wave-bottom {
