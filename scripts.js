@@ -5,10 +5,7 @@ function setWindowHeight() {
 
 setWindowHeight();
 
-// Code for toggling options on client-questionnaire.html
-// const ifActive = document.querySelector(".if-active");
-// const newWebsite = document.getElementById("question-5-1");
-// const oldWebsite = document.getElementById("question-5-2");
+// TODO: make all these functions into one if possible
 
 function oldNewCheck() {
     const ifActive = document.getElementById("improve-website-div");
@@ -92,14 +89,16 @@ function featureDisplay() {
 //////////////////////////////////////////////////////
 //////////////////////////////////////////////////////
 
+// TODO: set initial size of textarea (https://stackoverflow.com/questions/454202/creating-a-textarea-with-auto-resize)
+
 // For auto resizing textareas
 window.onload = function test() {
-const tx = document.getElementsByTagName("textarea");
+    const tx = document.getElementsByTagName("textarea");
 
-for (let i =0; i < tx.length; i++) {
-    tx[i].setAttribute("style", "height:" + (tx[i].scrollHeight) + "px;overflow-y:hidden;");
-    tx[i].addEventListener("input", OnInput, false);
-}
+    for (let i =0; i < tx.length; i++) {
+        tx[i].setAttribute("style", "height:" + (tx[i].scrollHeight) + "px;overflow-y:hidden;");
+        tx[i].addEventListener("input", OnInput, false);
+    }
 }
 
 function OnInput() {
